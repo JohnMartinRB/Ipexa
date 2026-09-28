@@ -1,210 +1,308 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="" />
+        <meta
+            name="keywords"
+            content="IPEXa,software,programming,development,technology,design,web,e-commerce,apps,applications"
+        />
+        <meta name="author" content="Juan Martín Rodríguez" />
+        <meta name="title" content="IPEXA Software" />
+        <title>Home - IPEXA Software</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="IPEXa,software,programming,development,technology,design,web,e-commerce,apps,applications">
-    <meta name="author" content="Juan Martín Rodríguez">
-    <meta name="title" content="IPEXA Software">
-    <title>Home - IPEXA Software</title>
+        <link rel="preload" href="CSS/normalize.css" as="style" />
+        <link rel="preload" href="CSS/fonts.css" as="style" />
+        <link rel="preload" href="CSS/styles.css" as="style" />
+        <link rel="preload" href="CSS/responsive.css" as="style" />
 
-    <link rel="preload" href="CSS/normalize.css" as="style">
-    <link rel="preload" href="CSS/fonts.css" as="style">
-    <link rel="preload" href="CSS/styles.css" as="style">
-    <link rel="preload" href="CSS/responsive.css" as="style">
+        <link rel="stylesheet" href="CSS/normalize.css" />
+        <link rel="stylesheet" href="CSS/fonts.css" />
+        <link rel="stylesheet" href="CSS/styles.css" />
+        <link rel="stylesheet" href="CSS/responsive.css" />
 
-    <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="stylesheet" href="CSS/fonts.css">
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="stylesheet" href="CSS/responsive.css">
+        <link rel="icon" type="image/svg+xml" href="images/favicon.svg" sizes="any" />
+    </head>
 
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" sizes="any">
-</head>
+    <body>
+        <a href="index.html" id="spanish">Language: spansih</a>
 
-<body>
+        <div class="contenido">
+            <header>
+                <h1 class="titulo">IPEXA <span>Software</span></h1>
+                <h2 class="subtitulo">IT Solutions</h2>
 
-    <a href="index.html" id="spanish">Language: spansih</a>
-
-    <div class="contenido">
-
-        <header>
-            <h1 class="titulo">IPEXA <span>Software</span></h1>
-            <h2 class="subtitulo">IT Solutions</h2>
-
-            <div class="menu-fondo">
-                <nav class="menu contenedor">
-                    <a href="#" class="activo">Home</a>
-                    <a href="en_about_us.html">About us</a>
-                    <a href="en_clients.html">Clients</a>
-                    <a href="en_contacts.html">Contacts</a>
-                </nav>
-            </div>
-        </header>
-
-        <section class="hero">
-            <div class="hero-contenido">
-                <h2>Web Programming</h2>
-                
-                <div class="hero-elementos">
-                    <a href="https://www.google.com/maps/place/Villa+Dolores,+C%C3%B3rdoba/@-31.94963,-65.2084239,14z/data=!3m1!4b1!4m6!3m5!1s0x942cd36012ebb0e1:0x3a4d4e674f9e51c4!8m2!3d-31.9450289!4d-65.1902739!16s%2Fm%2F027rf16?authuser=0&entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-                        <svg class="hero-icono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/>
-                            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"/>
-                        </svg>
-                    </a>
-
-                    <a href="https://www.google.com/maps/place/Villa+Dolores,+C%C3%B3rdoba/@-31.94963,-65.2084239,14z/data=!3m1!4b1!4m6!3m5!1s0x942cd36012ebb0e1:0x3a4d4e674f9e51c4!8m2!3d-31.9450289!4d-65.1902739!16s%2Fm%2F027rf16?authuser=0&entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-                        <p>Villa Dolores, Cba.</p>
-                    </a>
+                <div class="menu-fondo">
+                    <nav class="menu contenedor">
+                        <a href="#" class="activo">Home</a>
+                        <a href="en_about_us.html">About us</a>
+                        <a href="en_clients.html">Clients</a>
+                        <a href="en_contacts.html">Contacts</a>
+                    </nav>
                 </div>
-                
-                <a class="hero-boton" href="#">Contact us</a>
-            </div>
-        </section>
-        
-        <main class="contenido-central">
-            <h2 class="subtitulo">Our Services</h2>
+            </header>
 
-            <section class="servicios">
-                <div class="servicio">
-                    <h3>Web Design</h3>
-                        <div class="servicio-circulo">
-                            <svg class="servicio-icono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <path d="M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25"/>
-                                <path d="M8.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/>
-                                <path d="M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/>
-                                <path d="M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/>
+            <section class="hero">
+                <div class="hero-contenido">
+                    <h2>Web Programming</h2>
+
+                    <div class="hero-elementos">
+                        <a
+                            href="https://www.google.com/maps/place/Villa+Dolores,+C%C3%B3rdoba/@-31.94963,-65.2084239,14z/data=!3m1!4b1!4m6!3m5!1s0x942cd36012ebb0e1:0x3a4d4e674f9e51c4!8m2!3d-31.9450289!4d-65.1902739!16s%2Fm%2F027rf16?authuser=0&entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank"
+                        >
+                            <svg
+                                class="hero-icono"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                                <path
+                                    d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
+                                />
                             </svg>
+                        </a>
 
-                            <svg class="servicio-icono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <path d="M3 21v-4a4 4 0 1 1 4 4h-4"/>
-                                <path d="M21 3a16 16 0 0 0 -12.8 10.2"/>
-                                <path d="M21 3a16 16 0 0 1 -10.2 12.8"/>
-                                <path d="M10.6 9a9 9 0 0 1 4.4 4.4"/>
-                            </svg>
-                        </div>
+                        <a
+                            href="https://www.google.com/maps/place/Villa+Dolores,+C%C3%B3rdoba/@-31.94963,-65.2084239,14z/data=!3m1!4b1!4m6!3m5!1s0x942cd36012ebb0e1:0x3a4d4e674f9e51c4!8m2!3d-31.9450289!4d-65.1902739!16s%2Fm%2F027rf16?authuser=0&entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank"
+                        >
+                            <p>Villa Dolores, Cba.</p>
+                        </a>
+                    </div>
 
-                    <p>Ut porttitor semper erat sed tristique. In nibh neque, finibus a ipsum id, feementum viverra mauris.</p>
-                </div>
-                
-                <div class="servicio">
-                    <h3>Web Apps</h3>
-                        <div class="servicio-circulo">
-                            <svg class="servicio-icono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <path d="M4 10l0 6"/>
-                                <path d="M20 10l0 6"/>
-                                <path d="M7 9h10v8a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-8a5 5 0 0 1 10 0"/>
-                                <path d="M8 3l1 2"/>
-                                <path d="M16 3l-1 2"/>
-                                <path d="M9 18l0 3"/>
-                                <path d="M15 18l0 3"/>
-                            </svg>
-
-                            <svg class="servicio-icono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <path d="M8.286 7.008c-3.216 0 -4.286 3.23 -4.286 5.92c0 3.229 2.143 8.072 4.286 8.072c1.165 -.05 1.799 -.538 3.214 -.538c1.406 0 1.607 .538 3.214 .538s4.286 -3.229 4.286 -5.381c-.03 -.011 -2.649 -.434 -2.679 -3.23c-.02 -2.335 2.589 -3.179 2.679 -3.228c-1.096 -1.606 -3.162 -2.113 -3.75 -2.153c-1.535 -.12 -3.032 1.077 -3.75 1.077c-.729 0 -2.036 -1.077 -3.214 -1.077z"/>
-                                <path d="M12 4a2 2 0 0 0 2 -2a2 2 0 0 0 -2 2"/>
-                            </svg>
-                        </div>
-
-                    <p>Ut porttitor semper erat sed tristique. In nibh neque, finibus a ipsum id, feementum viverra mauris.</p>
-                </div>
-                
-                <div class="servicio">
-                    <h3>E-Commerce</h3>
-                        <div class="servicio-circulo">
-                            <svg class="servicio-icono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <path d="M3 5m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z"/>
-                                <path d="M3 10l18 0"/>
-                                <path d="M7 15l.01 0"/>
-                                <path d="M11 15l2 0"/>
-                            </svg>
-
-                            <svg class="servicio-icono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/>
-                                <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/>
-                                <path d="M17 17h-11v-14h-2"/>
-                                <path d="M6 5l14 1l-1 7h-13"/>
-                            </svg>
-                        </div>
-
-                    <p>Ut porttitor semper erat sed tristique. In nibh neque, finibus a ipsum id, feementum viverra mauris.</p>
+                    <a class="hero-boton" href="#">Contact us</a>
                 </div>
             </section>
 
-            <section>
-                <h2 class="subtitulo">Contact</h2>
-                <h3 class="subsubtitulo">Quick contact form</h3>
+            <main class="contenido-central">
+                <h2 class="subtitulo">Our Services</h2>
 
-                <form class="formulario" id="inicio-formulario">
-                    <fieldset>
-                        <legend>Fill in all the fields</legend>
-                        
-                        <div class="campo">
-                            <label>Full name<br></label>
-                            <input class="input-texto" type="text"
-                                placeholder="John Doe"
-                                title="Completa este campo con tu nombre completo"
-                                name="name"
-                                minlength="6"
-                                maxlength="100"
-                                required>
-                        </div>
-                        
-                        <div class="campo">
-                            <label>Phone number<br></label>
-                            <input class="input-texto" type="tel"
-                                placeholder="+00 0000 000000"
-                                title="Completa este campo con tu número de télefono"
-                                name="phone-number"
-                                minlength="5"
-                                maxlength="20"
-                                required>
-                        </div>
+                <section class="servicios">
+                    <div class="servicio">
+                        <h3>Web Design</h3>
+                        <div class="servicio-circulo">
+                            <svg
+                                class="servicio-icono"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25"
+                                />
+                                <path d="M8.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                                <path d="M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                                <path d="M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                            </svg>
 
-                        <div class="campo">
-                            <label>Email<br></label>
-                            <input class="input-texto" type="email"
-                                placeholder="example@gmail.com"
-                                title="Completa este campo con tu correo electrónico"
-                                name="email"
-                                minlength="10"
-                                maxlength="100"
-                                required>
-                        </div>
-                        
-                        <div class="campo">
-                            <label>Message<br></label>
-                            <textarea class="input-texto" 
-                                title="Completa este campo con tu mensaje"
-                                name="message"
-                                maxlength="500">
-                            </textarea>
+                            <svg
+                                class="servicio-icono"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M3 21v-4a4 4 0 1 1 4 4h-4" />
+                                <path d="M21 3a16 16 0 0 0 -12.8 10.2" />
+                                <path d="M21 3a16 16 0 0 1 -10.2 12.8" />
+                                <path d="M10.6 9a9 9 0 0 1 4.4 4.4" />
+                            </svg>
                         </div>
 
-                        <div>
-                            <input class="formulario-boton" id="inicio-formulario-boton" type="submit" value="Send">
+                        <p>
+                            Ut porttitor semper erat sed tristique. In nibh neque, finibus a ipsum id, feementum viverra
+                            mauris.
+                        </p>
+                    </div>
+
+                    <div class="servicio">
+                        <h3>Web Apps</h3>
+                        <div class="servicio-circulo">
+                            <svg
+                                class="servicio-icono"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M4 10l0 6" />
+                                <path d="M20 10l0 6" />
+                                <path d="M7 9h10v8a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-8a5 5 0 0 1 10 0" />
+                                <path d="M8 3l1 2" />
+                                <path d="M16 3l-1 2" />
+                                <path d="M9 18l0 3" />
+                                <path d="M15 18l0 3" />
+                            </svg>
+
+                            <svg
+                                class="servicio-icono"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M8.286 7.008c-3.216 0 -4.286 3.23 -4.286 5.92c0 3.229 2.143 8.072 4.286 8.072c1.165 -.05 1.799 -.538 3.214 -.538c1.406 0 1.607 .538 3.214 .538s4.286 -3.229 4.286 -5.381c-.03 -.011 -2.649 -.434 -2.679 -3.23c-.02 -2.335 2.589 -3.179 2.679 -3.228c-1.096 -1.606 -3.162 -2.113 -3.75 -2.153c-1.535 -.12 -3.032 1.077 -3.75 1.077c-.729 0 -2.036 -1.077 -3.214 -1.077z"
+                                />
+                                <path d="M12 4a2 2 0 0 0 2 -2a2 2 0 0 0 -2 2" />
+                            </svg>
                         </div>
-                    </fieldset>
-                </form>
-            </section>
-        </main>
 
-        <footer class="pie">
-            <p>© 2026 IPEXA Software. All right reserved.</p>
-        </footer>
+                        <p>
+                            Ut porttitor semper erat sed tristique. In nibh neque, finibus a ipsum id, feementum viverra
+                            mauris.
+                        </p>
+                    </div>
 
-    </div>
+                    <div class="servicio">
+                        <h3>E-Commerce</h3>
+                        <div class="servicio-circulo">
+                            <svg
+                                class="servicio-icono"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M3 5m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z"
+                                />
+                                <path d="M3 10l18 0" />
+                                <path d="M7 15l.01 0" />
+                                <path d="M11 15l2 0" />
+                            </svg>
 
-</body>
+                            <svg
+                                class="servicio-icono"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                                <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                                <path d="M17 17h-11v-14h-2" />
+                                <path d="M6 5l14 1l-1 7h-13" />
+                            </svg>
+                        </div>
 
+                        <p>
+                            Ut porttitor semper erat sed tristique. In nibh neque, finibus a ipsum id, feementum viverra
+                            mauris.
+                        </p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="subtitulo">Contact</h2>
+                    <h3 class="subsubtitulo">Quick contact form</h3>
+
+                    <form class="formulario" id="inicio-formulario">
+                        <fieldset>
+                            <legend>Fill in all the fields</legend>
+
+                            <div class="campo">
+                                <label>Full name<br /></label>
+                                <input
+                                    class="input-texto"
+                                    type="text"
+                                    placeholder="John Doe"
+                                    title="Completa este campo con tu nombre completo"
+                                    name="name"
+                                    minlength="6"
+                                    maxlength="100"
+                                    required
+                                />
+                            </div>
+
+                            <div class="campo">
+                                <label>Phone number<br /></label>
+                                <input
+                                    class="input-texto"
+                                    type="tel"
+                                    placeholder="+00 0000 000000"
+                                    title="Completa este campo con tu número de télefono"
+                                    name="phone-number"
+                                    minlength="5"
+                                    maxlength="20"
+                                    required
+                                />
+                            </div>
+
+                            <div class="campo">
+                                <label>Email<br /></label>
+                                <input
+                                    class="input-texto"
+                                    type="email"
+                                    placeholder="example@gmail.com"
+                                    title="Completa este campo con tu correo electrónico"
+                                    name="email"
+                                    minlength="10"
+                                    maxlength="100"
+                                    required
+                                />
+                            </div>
+
+                            <div class="campo">
+                                <label>Message<br /></label>
+                                <textarea
+                                    class="input-texto"
+                                    title="Completa este campo con tu mensaje"
+                                    name="message"
+                                    maxlength="500"
+                                >
+                                </textarea>
+                            </div>
+
+                            <div>
+                                <input
+                                    class="formulario-boton"
+                                    id="inicio-formulario-boton"
+                                    type="submit"
+                                    value="Send"
+                                />
+                            </div>
+                        </fieldset>
+                    </form>
+                </section>
+            </main>
+
+            <footer class="pie">
+                <p>© 2026 IPEXA Software. All right reserved.</p>
+            </footer>
+        </div>
+    </body>
 </html>

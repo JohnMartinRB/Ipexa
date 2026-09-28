@@ -1,83 +1,96 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="" />
         <meta
             name="keywords"
-            content="IPEXa,software,programacion,desarrollo,tecnologia,diseño,web,e-commerce,apps,aplicaciones"
+            content="IPEXa,software,programming,development,technology,design,web,e-commerce,apps,applications"
         />
         <meta name="author" content="Juan Martín Rodríguez" />
         <meta name="title" content="IPEXA Software" />
-        <title>Nosotros - IPEXA Software</title>
+        <title>Home - IPEXA Software</title>
 
         <link rel="preload" href="CSS/normalize.css" as="style" />
         <link rel="preload" href="CSS/fonts.css" as="style" />
+        <link rel="preload" href="CSS/colors.css" as="style" />
         <link rel="preload" href="CSS/styles.css" as="style" />
-        <link rel="preload" href="CSS/responsive.css" as="style" />
 
         <link rel="stylesheet" href="CSS/normalize.css" />
         <link rel="stylesheet" href="CSS/fonts.css" />
+        <link rel="stylesheet" href="CSS/colors.css" />
         <link rel="stylesheet" href="CSS/styles.css" />
-        <link rel="stylesheet" href="CSS/responsive.css" />
 
         <link rel="icon" type="image/svg+xml" href="images/favicon.svg" sizes="any" />
     </head>
 
     <body>
-        <a href="en_about_us.html" id="english">Idioma: inglés</a>
+        <input type="checkbox" id="dark-mode" style="display: none" />
+        <label id="modo-oscuro" for="dark-mode">Dark mode</label>
+
+        <a href="index.html" id="spanish">Language: spansih</a>
 
         <div class="contenido">
             <header>
-                <h1 class="titulo">Nosotros</h1>
-                <h2 class="subtitulo">IPEXA Software</h2>
+                <h1 class="titulo">IPEXA <span>Software</span></h1>
+                <h2 class="subtitulo">IT Solutions</h2>
 
                 <div class="menu-fondo">
                     <nav class="menu contenedor">
-                        <a href="index.html">Inicio</a>
-                        <a href="#" class="activo">Nosotros</a>
-                        <a href="clients.html">Clientes</a>
-                        <a href="contacts.html">Contactos</a>
+                        <a href="#" class="activo">Home</a>
+                        <a href="en_about_us.html">About us</a>
+                        <a href="en_clients.html">Clients</a>
+                        <a href="en_contacts.html">Contacts</a>
                     </nav>
                 </div>
             </header>
 
             <section class="hero">
                 <div class="hero-contenido">
-                    <h2>+200 miembros</h2>
+                    <h2>Web Programming</h2>
 
                     <div class="hero-elementos">
-                        <svg
-                            class="hero-icono"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                        <a
+                            href="https://www.google.com/maps/place/Villa+Dolores,+C%C3%B3rdoba/@-31.94963,-65.2084239,14z/data=!3m1!4b1!4m6!3m5!1s0x942cd36012ebb0e1:0x3a4d4e674f9e51c4!8m2!3d-31.9450289!4d-65.1902739!16s%2Fm%2F027rf16?authuser=0&entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank"
                         >
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
-                            <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                            <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
-                        </svg>
+                            <svg
+                                class="hero-icono"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                                <path
+                                    d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
+                                />
+                            </svg>
+                        </a>
 
-                        <p>Especializados en todas las áreas</p>
+                        <a
+                            href="https://www.google.com/maps/place/Villa+Dolores,+C%C3%B3rdoba/@-31.94963,-65.2084239,14z/data=!3m1!4b1!4m6!3m5!1s0x942cd36012ebb0e1:0x3a4d4e674f9e51c4!8m2!3d-31.9450289!4d-65.1902739!16s%2Fm%2F027rf16?authuser=0&entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank"
+                        >
+                            <p>Villa Dolores, Cba.</p>
+                        </a>
                     </div>
 
-                    <a class="hero-boton" href="#">Únete al equipo</a>
+                    <a class="hero-boton" href="#">Contact us</a>
                 </div>
             </section>
 
             <main class="contenido-central">
-                <h2 class="subtitulo">¿Quiénes somos?</h2>
+                <h2 class="subtitulo">Our Services</h2>
 
                 <section class="servicios">
                     <div class="servicio">
-                        <h3>Diseño Web</h3>
+                        <h3>Web Design</h3>
                         <div class="servicio-circulo">
                             <svg
                                 class="servicio-icono"
@@ -123,7 +136,7 @@
                     </div>
 
                     <div class="servicio">
-                        <h3>Aplicaciones Web</h3>
+                        <h3>Web Apps</h3>
                         <div class="servicio-circulo">
                             <svg
                                 class="servicio-icono"
@@ -217,16 +230,16 @@
                 </section>
 
                 <section>
-                    <h2 class="subtitulo">Contacto</h2>
+                    <h2 class="subtitulo">Contact</h2>
+                    <h3 class="subsubtitulo">Quick contact form</h3>
 
-                    <form class="formulario" id="nosotros-formulario">
+                    <form class="formulario" id="inicio-formulario">
                         <fieldset>
-                            <legend>Contáctanos llenando todos los campos</legend>
+                            <legend>Fill in all the fields</legend>
 
-                            <div class="campo">
-                                <label>Nombre<br /></label>
+                            <div>
+                                <label>Full name<br /></label>
                                 <input
-                                    class="input-texto"
                                     type="text"
                                     placeholder="John Doe"
                                     title="Completa este campo con tu nombre completo"
@@ -237,10 +250,9 @@
                                 />
                             </div>
 
-                            <div class="campo">
-                                <label>Teléfono<br /></label>
+                            <div>
+                                <label>Phone number<br /></label>
                                 <input
-                                    class="input-texto"
                                     type="tel"
                                     placeholder="+00 0000 000000"
                                     title="Completa este campo con tu número de télefono"
@@ -251,10 +263,9 @@
                                 />
                             </div>
 
-                            <div class="campo">
-                                <label>Correo<br /></label>
+                            <div>
+                                <label>Email<br /></label>
                                 <input
-                                    class="input-texto"
                                     type="email"
                                     placeholder="example@gmail.com"
                                     title="Completa este campo con tu correo electrónico"
@@ -265,23 +276,18 @@
                                 />
                             </div>
 
-                            <div class="campo">
-                                <label>Mensaje<br /></label>
-                                <textarea
-                                    class="input-texto"
-                                    title="Completa este campo con tu mensaje"
-                                    name="message"
-                                    maxlength="500"
-                                >
+                            <div>
+                                <label>Message<br /></label>
+                                <textarea title="Completa este campo con tu mensaje" name="message" maxlength="500">
                                 </textarea>
                             </div>
 
                             <div>
                                 <input
                                     class="formulario-boton"
-                                    id="nosotros-formulario-boton"
+                                    id="inicio-formulario-boton"
                                     type="submit"
-                                    value="Enviar"
+                                    value="Send"
                                 />
                             </div>
                         </fieldset>
@@ -290,7 +296,7 @@
             </main>
 
             <footer class="pie">
-                <p>© 2026 IPEXA Software. Todos los derechos reservados.</p>
+                <p>© 2026 IPEXA Software. All right reserved.</p>
             </footer>
         </div>
     </body>

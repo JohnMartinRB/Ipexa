@@ -10,42 +10,45 @@
         />
         <meta name="author" content="Juan Martín Rodríguez" />
         <meta name="title" content="IPEXA Software" />
-        <title>Contactos - IPEXA Software</title>
+        <title>Clientes - IPEXA Software</title>
 
         <link rel="preload" href="CSS/normalize.css" as="style" />
         <link rel="preload" href="CSS/fonts.css" as="style" />
+        <link rel="preload" href="CSS/colors.css" as="style" />
         <link rel="preload" href="CSS/styles.css" as="style" />
-        <link rel="preload" href="CSS/responsive.css" as="style" />
 
         <link rel="stylesheet" href="CSS/normalize.css" />
         <link rel="stylesheet" href="CSS/fonts.css" />
+        <link rel="stylesheet" href="CSS/colors.css" />
         <link rel="stylesheet" href="CSS/styles.css" />
-        <link rel="stylesheet" href="CSS/responsive.css" />
 
         <link rel="icon" type="image/svg+xml" href="images/favicon.svg" sizes="any" />
     </head>
 
     <body>
-        <a href="en_contacts.html" id="english">Idioma: inglés</a>
+        <input type="checkbox" id="dark-mode" style="display: none" />
+        <label id="modo-oscuro" for="dark-mode">Modo oscuro</label>
+
+        <a href="en_clients.html" id="english">Idioma: inglés</a>
 
         <div class="contenido">
             <header>
-                <h1 class="titulo">Contactos</h1>
+                <h1 class="titulo">Clientes</h1>
                 <h2 class="subtitulo">IPEXA Software</h2>
 
                 <div class="menu-fondo">
                     <nav class="menu contenedor">
                         <a href="index.html">Inicio</a>
-                        <a href="about_us.html">Nosotros</a>
-                        <a href="clients.html">Clientes</a>
-                        <a href="#" class="activo">Contactos</a>
+                        <a href="about_us.html"> Nosotros </a>
+                        <a href="#" class="activo">Clientes</a>
+                        <a href="contacts.html">Contactos</a>
                     </nav>
                 </div>
             </header>
 
             <section class="hero">
                 <div class="hero-contenido">
-                    <h2>Soporte 24/7</h2>
+                    <h2>+2000 clientes</h2>
 
                     <div class="hero-elementos">
                         <svg
@@ -59,15 +62,21 @@
                             stroke-linejoin="round"
                         >
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M20.972 11.291a9 9 0 1 0 -8.322 9.686" />
+                            <path d="M3.6 9h16.8" />
+                            <path d="M3.6 15h8.9" />
+                            <path d="M11.5 3a17 17 0 0 0 0 18" />
+                            <path d="M12.5 3a16.986 16.986 0 0 1 2.578 9.018" />
                             <path
-                                d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"
+                                d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z"
                             />
+                            <path d="M19 18v.01" />
                         </svg>
 
-                        <p>¡A tu disposición siempre!</p>
+                        <p>Alrededor de más de 15 países</p>
                     </div>
 
-                    <a class="hero-boton" href="#formulario-contratar">Contratar servicios</a>
+                    <a class="hero-boton" href="#formulario-login">Iniciar sesión</a>
                 </div>
             </section>
 
@@ -219,140 +228,112 @@
 
                 <div class="formularios">
                     <section class="formulario-contenedor1">
-                        <h2 class="subtitulo" id="formulario-contratar">Contratar un servicio</h2>
-                        <h3 class="subsubtitulo">Completo y personalizado</h3>
+                        <h2 class="subtitulo" id="formulario-login">Inicia sesión</h2>
+                        <h3 class="subsubtitulo">Con una cuenta ya existente</h3>
 
-                        <form class="formulario" id="contactos-formulario-contratar">
+                        <form class="formulario" id="clientes-formulario-login">
                             <fieldset>
-                                <div class="campo">
-                                    <label>Nombre<br /></label>
+                                <div>
+                                    <label>Nombre de usuario<br /></label>
                                     <input
-                                        class="input-texto"
                                         type="text"
-                                        placeholder="John Doe"
-                                        title="Completa este campo con tu nombre completo"
-                                        name="name"
+                                        placeholder="@john_doe"
+                                        title="Ingresa tu nombre de usuario"
+                                        name="username"
                                         minlength="6"
+                                        maxlength="20"
+                                        required
+                                    />
+                                </div>
+
+                                <div>
+                                    <label>Contraseña<br /></label>
+                                    <input
+                                        type="password"
+                                        title="Ingresa tu constraseña"
+                                        name="password"
+                                        minlength="10"
                                         maxlength="100"
                                         required
                                     />
                                 </div>
 
-                                <div class="campo">
-                                    <label>¿Qué servicio quieres contratar?<br /></label>
-                                    <div class="formulario-opcion">
-                                        <input type="checkbox" id="diseño_web" name="diseño_web" />
-                                        <label for="diseño_web">Diseño web</label>
-                                    </div>
-                                    <div class="formulario-opcion">
-                                        <input type="checkbox" id="apps_web" name="apps_web" />
-                                        <label for="apps_web">Aplicaciones web</label>
-                                    </div>
-                                    <div class="formulario-opcion">
-                                        <input type="checkbox" id="e_commerce" name="e_commerce" />
-                                        <label for="e_commerce">E-Commerce</label>
-                                    </div>
-                                </div>
-
-                                <div class="campo">
-                                    <label>Déjanos una breve descripción de tu necesidad<br /></label>
-                                    <textarea
-                                        class="input-texto"
-                                        title="Cuéntanos qué es lo que necesitas"
-                                        name="message"
-                                        maxlength="500"
-                                    >
-                                    </textarea>
-                                </div>
-
                                 <div>
                                     <input
                                         class="formulario-boton"
-                                        id="contactos-formulario-contratar-boton"
+                                        id="clientes-formulario-login-boton"
                                         type="submit"
-                                        value="Enviar"
+                                        value="Iniciar sesión"
                                     />
-                                </div>
-
-                                <div>
-                                    <p>Recibirás una respuesta en breve!</p>
                                 </div>
                             </fieldset>
                         </form>
                     </section>
 
                     <section class="formulario-contenedor2">
-                        <h2 class="subtitulo">Convertirme en miembro del equipo</h2>
-                        <h3 class="subsubtitulo">Colaboración, disposición y profesionalismo</h3>
+                        <h2 class="subtitulo">o regístrate</h2>
+                        <h3 class="subsubtitulo">Conviértete en cliente y obtén beneficios</h3>
 
-                        <form class="formulario" id="contactos-formulario-unirse">
+                        <form class="formulario" id="clientes-formulario-signup">
                             <fieldset>
-                                <div class="campo">
-                                    <label>Nombre completo<br /></label>
+                                <div>
+                                    <label>Nombre de usuario<br /></label>
                                     <input
-                                        class="input-texto"
                                         type="text"
-                                        placeholder="John Doe"
-                                        title="Completa este campo con tu nombre completo"
-                                        name="name"
+                                        placeholder="@john_doe"
+                                        title="Crea un nombre de usuario"
+                                        name="username"
                                         minlength="6"
-                                        maxlength="100"
+                                        maxlength="20"
                                         required
                                     />
                                 </div>
 
-                                <div class="campo">
-                                    <label>Nacionalidad<br /></label>
+                                <div>
+                                    <label>Nombre<br /></label>
                                     <input
-                                        class="input-texto"
                                         type="text"
-                                        placeholder="Argentinian"
-                                        title="Completa este campo con tu nacionalidad"
-                                        name="nationality"
-                                        minlength="1"
+                                        placeholder="John Doe"
+                                        title="Coloca tu nombre"
+                                        name="name"
+                                        minlength="6"
                                         maxlength="50"
                                         required
                                     />
                                 </div>
 
-                                <div class="campo">
-                                    <label>¿De qué área quieres formar parte?<br /></label>
-                                    <div class="formulario-opcion">
-                                        <input type="checkbox" id="diseño_web" name="diseño_web" />
-                                        <label for="diseño_web">Diseño web</label>
-                                    </div>
-                                    <div class="formulario-opcion">
-                                        <input type="checkbox" id="apps_web" name="apps_web" />
-                                        <label for="apps_web">Aplicaciones web</label>
-                                    </div>
-                                    <div class="formulario-opcion">
-                                        <input type="checkbox" id="e_commerce" name="e_commerce" />
-                                        <label for="e_commerce">E-Commerce</label>
-                                    </div>
+                                <div>
+                                    <label>Correo<br /></label>
+                                    <input
+                                        type="email"
+                                        placeholder="example@gmail.com"
+                                        title="Coloca tu correo electrónico"
+                                        name="email"
+                                        minlength="10"
+                                        maxlength="100"
+                                        required
+                                    />
                                 </div>
 
-                                <div class="campo">
-                                    <label>Cuéntanos un poco sobre ti<br /></label>
-                                    <textarea
-                                        class="input-texto"
-                                        title="Escribe sobre tus experiencias, pasatiempos..."
-                                        name="message"
-                                        maxlength="500"
-                                    >
-                                    </textarea>
+                                <div>
+                                    <label>Contraseña<br /></label>
+                                    <input
+                                        type="password"
+                                        title="Crea una constraseña"
+                                        name="password"
+                                        minlength="10"
+                                        maxlength="100"
+                                        required
+                                    />
                                 </div>
 
                                 <div>
                                     <input
                                         class="formulario-boton"
-                                        id="contactos-formulario-unirse-boton"
+                                        id="clientes-formulario-signup-boton"
                                         type="submit"
-                                        value="Enviar"
+                                        value="Crear cuenta"
                                     />
-                                </div>
-
-                                <div>
-                                    <p>Recibirás una respuesta en breve!</p>
                                 </div>
                             </fieldset>
                         </form>

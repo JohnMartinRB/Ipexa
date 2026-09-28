@@ -1,0 +1,180 @@
+:root {
+    /* General */
+    --fondo1: #134cd4;
+    --fondo2: #77c9ff;
+
+    --titulo: #fff;
+    --subtitulo: #fff;
+
+    --menu-fondo: #1ee1f7;
+    --menu-texto: #071542;
+    --menu-fondo-hover: #134cd4;
+    --menu-texto-hover: #fff;
+    --menu-fondo-activo: #19a7d9;
+    --menu-texto-actvio: #071542;
+
+    --hero-titulo: #fff;
+    --hero-icono: #fff;
+    --hero-texto: #fff;
+    --hero-boton-fondo: #1ee1f7;
+    --hero-boton-texto: #071542;
+    --hero-boton-fondo-hover: #134cd4;
+    --hero-boton-texto-hover: #fff;
+
+    --pie-parrafo: #000;
+
+    /* Inicio */
+    --servicio-titulo: #1ee1f7;
+    --servicio-circulo: #0e3475;
+    --servicio-icono: #1ee1f7;
+    --servicio-parrafo: #fff;
+
+    --inicio-subsubtitulo: #fff;
+    --inicio-formulario: #0e3475;
+    --inicio-formulario-legend: #1ee1f7;
+    --inicio-formulario-label: #fff;
+    --inicio-formulario-input: #000;
+    --inicio-formulario-input-focus: #091f46;
+    --inicio-formulario-checkbox: #1ee1f7;
+    --inicio-formulario-texto: #fff;
+    --inicio-formulario-boton-fondo: #1ee1f7;
+    --inicio-formulario-boton-texto: #071542;
+    --inicio-formulario-boton-fondo-hover: #134cd4;
+    --inicio-formulario-boton-texto-hover: #fff;
+
+    /* Nosotros */
+    --nosotros-subsubtitulo: #fff;
+    --nosotros-formulario: #0e3475;
+    --nosotros-formulario-legend: #1ee1f7;
+    --nosotros-formulario-label: #fff;
+    --inicio-formulario-input: #000;
+    --nosotros-formulario-input-focus: #091f46;
+    --nosotros-formulario-checkbox: #1ee1f7;
+    --nosotros-formulario-texto: #fff;
+    --nosotros-formulario-boton-fondo: #1ee1f7;
+    --nosotros-formulario-boton-texto: #071542;
+    --nosotros-formulario-boton-fondo-hover: #134cd4;
+    --nosotros-formulario-boton-texto-hover: #fff;
+
+    /* Clientes */
+    --clientes-login-subsubtitulo: #fff;
+    --clientes-formulario-login: #0e3475;
+    --clientes-formulario-login-legend: #1ee1f7;
+    --clientes-formulario-login-label: #fff;
+    --clientes-formulario-login-input: #000;
+    --clientes-formulario-login-input-focus: #091f46;
+    --clientes-formulario-login-checkbox: #1ee1f7;
+    --clientes-formulario-login-texto: #fff;
+    --clientes-formulario-login-boton-fondo: #1ee1f7;
+    --clientes-formulario-login-boton-texto: #071542;
+    --clientes-formulario-login-boton-fondo-hover: #134cd4;
+    --clientes-formulario-login-boton-texto-hover: #fff;
+
+    --clientes-signup-subsubtitulo: #fff;
+    --clientes-formulario-signup: #0e3475;
+    --clientes-formulario-signup-legend: #1ee1f7;
+    --clientes-formulario-signup-label: #fff;
+    --clientes-formulario-signup-input: #000;
+    --clientes-formulario-signup-input-focus: #091f46;
+    --clientes-formulario-signup-checkbox: #1ee1f7;
+    --clientes-formulario-signup-texto: #fff;
+    --clientes-formulario-signup-boton-fondo: #1ee1f7;
+    --clientes-formulario-signup-boton-texto: #071542;
+    --clientes-formulario-signup-boton-fondo-hover: #134cd4;
+    --clientes-formulario-signup-boton-texto-hover: #fff;
+
+    /* Contactos */
+    --contactos-contratar-subsubtitulo: #fff;
+    --contactos-formulario-contratar: #0e3475;
+    --contactos-formulario-contratar-legend: #1ee1f7;
+    --contactos-formulario-contratar-label: #fff;
+    --contactos-formulario-contratar-input: #000;
+    --contactos-formulario-contratar-input-focus: #091f46;
+    --contactos-formulario-contratar-checkbox: #1ee1f7;
+    --contactos-formulario-contratar-texto: #fff;
+    --contactos-formulario-contratar-boton-fondo: #1ee1f7;
+    --contactos-formulario-contratar-boton-texto: #071542;
+    --contactos-formulario-contratar-boton-fondo-hover: #134cd4;
+    --contactos-formulario-contratar-boton-texto-hover: #fff;
+
+    --contactos-unirse-subsubtitulo: #fff;
+    --contactos-formulario-unirse: #0e3475;
+    --contactos-formulario-unirse-legend: #1ee1f7;
+    --contactos-formulario-unirse-label: #fff;
+    --contactos-formulario-unirse-input: #000;
+    --contactos-formulario-unirse-input-focus: #091f46;
+    --contactos-formulario-unirse-checkbox: #1ee1f7;
+    --contactos-formulario-unirse-texto: #fff;
+    --contactos-formulario-unirse-boton-fondo: #1ee1f7;
+    --contactos-formulario-unirse-boton-texto: #071542;
+    --contactos-formulario-unirse-boton-fondo-hover: #134cd4;
+    --contactos-formulario-unirse-boton-texto-hover: #fff;
+}
+
+#modo-oscuro {
+    display: none;
+}
+
+#english,
+#spanish {
+    display: block;
+    margin-bottom: -25px;
+    background-color: #134cd4;
+    color: #77c9ff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.titulo {
+    text-shadow: 0 0 3px #1ee1f7;
+}
+.subtitulo {
+    text-shadow: 0 0 2px #1ee1f7;
+}
+.subsubtitulo {
+    text-shadow: 0 0 2px #1ee1f7;
+}
+
+.hero {
+    background-image: url("../images/hero3.jpg");
+}
+.hero-contenido {
+    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgb(0 0 0 / 40%);
+}
+.hero-contenido h2 {
+    text-shadow: 0 0 3px #1ee1f7;
+}
+.hero-contenido p {
+    text-shadow: 0 0 5px #1ee1f7;
+}
+.hero-boton {
+    box-shadow: 0 0 10px 5px #1e62ff;
+}
+
+.menu a:hover {
+    box-shadow: 0 0 10px 5px #1e62ff;
+}
+
+.contenido-central,
+.formulario-contenedor1,
+.formulario-contenedor2 {
+    box-shadow: 0 5px 10px 10px #1b3280;
+    /* -webkit-box-shadow: 0 5px 10px 60px rgb(85, 150, 255);
+    -moz-box-shadow: 0 5px 5px 5px rgb(85, 150, 255); */
+}
+
+.iconos {
+    box-shadow: 0 0 10px 10px #196aec;
+}
+
+.servicio h3 {
+    font-weight: bold;
+}
+
+.formulario {
+    box-shadow: 0 0 10px 5px #114296;
+}
+.formulario-boton {
+    box-shadow: 0 0 10px 5px #1e62ff;
+}

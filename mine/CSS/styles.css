@@ -1,24 +1,3 @@
-:root {
-    --blanco: #fff;
-    --negro: #181e2a;
-
-    --gris_claro: #dfe9f3;
-    --gris: #757575;
-    --gris_oscuro: #555555;
-
-    --celeste: #0097a7;
-    --celeste_oscurito1: #027885;
-    --celeste_oscurito2: #02717e;
-
-    --turquesa: #004c4c;
-    --turquesa_oscuro: #012727;
-
-    --dorado: #ffc107;
-    --dorado_oscurito: #b98c03;
-    --dorado_oscuro: #6e5403;
-    --dorado_oscurazo: #4e3b02;
-}
-
 /* Sitio web */
 html {
     box-sizing: border-box;
@@ -32,32 +11,28 @@ html {
 }
 body {
     margin: 0;
-    background-image: linear-gradient(to bottom, var(--blanco) 0%, var(--gris_claro) 100%);
+    background-image: linear-gradient(to bottom, var(--fondo1) 0%, var(--fondo2) 100%);
     font-weight: normal;
     font-size: 16px;
     font-family: "Krub";
-}
-body::selection {
-    background-color: var(--celeste);
-    color: var(--blanco);
 }
 a {
     text-decoration: none;
 }
 
 .contenido {
-    background-image: linear-gradient(to bottom, var(--blanco) 0%, var(--gris_claro) 100%);
+    background-image: linear-gradient(to bottom, var(--fondo1) 0%, var(--fondo2) 100%);
 }
 
 /* Titulo */
 .titulo {
-    color: var(--negro);
+    color: var(--titulo);
     font-weight: bold;
     font-size: 4rem;
     text-align: center;
 }
 .titulo span {
-    color: var(--negro);
+    color: var(--titulo);
     font-weight: bold;
     font-size: 3rem;
 }
@@ -82,13 +57,13 @@ a {
     justify-content: space-evenly;
 }
 .menu-fondo {
-    background-color: var(--celeste);
+    background-color: var(--menu-fondo);
 }
 .menu a {
     display: block;
     padding: 1rem;
-    background-color: var(--celeste);
-    color: var(--blanco);
+    background-color: var(--menu-fondo);
+    color: var(--menu-texto);
     font-weight: bold;
     font-size: 2rem;
     text-align: center;
@@ -97,13 +72,13 @@ a {
 }
 
 .menu a:hover {
-    background-color: var(--dorado);
-    color: var(--negro);
+    background-color: var(--menu-fondo-hover);
+    color: var(--menu-texto-hover);
 }
 
 .menu a.activo {
-    background-color: var(--celeste_oscurito1);
-    color: var(--blanco);
+    background-color: var(--menu-fondo-activo);
+    color: var(--menu-texto-activo);
 }
 
 @media (max-width: 480px) {
@@ -119,7 +94,6 @@ a {
 .hero {
     position: relative;
     height: 450px;
-    background-image: url("../images/hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -132,8 +106,6 @@ a {
     justify-content: center;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    background-color: rgb(0 0 0 / 70%);
 }
 .hero-elementos {
     display: flex;
@@ -141,12 +113,12 @@ a {
     align-items: flex-end;
 }
 .hero-contenido h2 {
-    color: var(--blanco);
+    color: var(--hero-titulo);
     font-weight: bold;
     font-size: 3rem;
 }
 .hero-contenido p {
-    color: var(--blanco);
+    color: var(--hero-texto);
     font-size: 2rem;
 }
 .hero-boton {
@@ -154,8 +126,8 @@ a {
     margin-top: 2rem;
     padding: 1rem 3rem;
     border-radius: 0.5rem;
-    background-color: var(--celeste);
-    color: var(--blanco);
+    background-color: var(--hero-boton-fondo);
+    color: var(--hero-boton-texto);
     font-weight: bold;
     font-size: 2rem;
     text-decoration: none;
@@ -163,13 +135,13 @@ a {
     cursor: pointer;
 }
 .hero-boton:hover {
-    background-color: var(--dorado);
-    color: var(--negro);
+    background-color: var(--hero-boton-fondo-hover);
+    color: var(--hero-boton-texto-hover);
 }
 .hero-icono {
     width: 90px;
     height: 90px;
-    color: var(--dorado);
+    color: var(--hero-icono);
 }
 
 @media (max-width: 480px) {
@@ -198,15 +170,7 @@ a {
     margin-bottom: 3rem;
     padding: 2rem;
     border-radius: 1.5rem;
-    background-color: var(--blanco);
-}
-
-.contenido-central,
-.formulario-contenedor1,
-.formulario-contenedor2 {
-    box-shadow: 0 5px 15px 0 rgba(70, 70, 70, 0.6);
-    -webkit-box-shadow: 0 5px 15px 0 rgba(70, 70, 70, 0.6);
-    -moz-box-shadow: 0 5px 15px 0 rgba(70, 70, 70, 0.6);
+    background-color: var(--fondo1);
 }
 
 @media (max-width: 480px) {
@@ -221,7 +185,7 @@ a {
 
 /* Subtitulos */
 .subtitulo {
-    color: var(--negro);
+    color: var(--subtitulo);
     font-weight: bold;
     font-size: 3rem;
     text-align: center;
@@ -235,7 +199,7 @@ a {
 
 /* Formulario general */
 .subsubtitulo {
-    color: var(--negro);
+    color: var(--subsubtitulo);
     font-weight: bold;
     font-size: 2.5rem;
     text-align: center;
@@ -357,24 +321,14 @@ a {
 }
 
 /* Pie de página */
-.pie .copyright {
-    display: block;
-    color: var(--negro);
+.pie p {
+    color: var(--pie-parrafo);
     font-size: 2rem;
     text-align: center;
 }
-.pie .language {
-    display: block;
-    color: var(--negro);
-    font-size: 2rem;
-    text-align: left;
-}
 
 @media (max-width: 480px) {
-    .pie .copyright {
-        font-size: 1rem;
-    }
-    .pie .language {
+    .pie p {
         font-size: 1rem;
     }
 }
@@ -392,13 +346,12 @@ a {
     align-items: center;
 }
 .servicio h3 {
-    color: var(--celeste);
-    font-weight: normal;
+    color: var(--servicio-titulo);
     font-size: 2rem;
     text-align: center;
 }
 .servicio p {
-    color: var(--negro);
+    color: var(--servicio-parrafo);
     font-size: 2rem;
     line-height: 4rem;
     text-align: center;
@@ -410,12 +363,12 @@ a {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-color: var(--dorado);
+    background-color: var(--servicio-circulo);
 }
 .servicio-icono {
     width: 45px;
     height: 45px;
-    stroke: var(--negro);
+    stroke: var(--servicio-icono);
 }
 
 @media (max-width: 480px) {
@@ -441,44 +394,44 @@ a {
 /* Formulario de contacto rápido */
 #inicio-formulario {
     width: min(60rem, 100%);
-    background-color: var(--gris);
+    background-color: var(--inicio-formulario);
 }
 #inicio-formulario legend {
-    color: var(--dorado);
+    color: var(--inicio-formulario-legend);
 }
 #inicio-formulario label {
-    color: var(--blanco);
+    color: var(--inicio-formulario-label);
 }
 #inicio-formulario .input-texto {
-    color: var(--negro);
+    color: var(--inicio-formulario-input);
 }
 #inicio-formulario input:focus {
-    outline: 3px solid var(--gris_oscuro);
+    outline: 3px solid var(--inicio-formulario-input-focus);
 }
 #inicio-formulario input[type="checkbox"] {
     width: 20px;
     height: 20px;
     border-radius: 30px;
-    accent-color: var(--celeste);
+    accent-color: var(--inicio-formulario-checkbox);
 }
 #inicio-formulario textarea {
-    color: var(--negro);
+    color: var(--inicio-formulario-input);
 }
 #inicio-formulario textarea:focus {
-    border: 3px solid var(--gris_oscuro);
+    border: 3px solid var(--inicio-formulario-input-focus);
 }
 #inicio-formulario-boton {
     margin-top: 0.5rem;
-    background-color: var(--celeste);
-    color: var(--blanco);
+    background-color: var(--inicio-formulario-boton-fondo);
+    color: var(--inicio-formulario-boton-texto);
 }
 #inicio-formulario-boton:hover {
-    background-color: var(--dorado);
-    color: var(--negro);
+    background-color: var(--inicio-formulario-boton-fondo-hover);
+    color: var(--inicio-formulario-boton-texto-hover);
 }
 #inicio-formulario p {
     display: block;
-    color: var(--blanco);
+    color: var(--inicio-formulario-texto);
 }
 
 /* Nosotros */
@@ -487,14 +440,14 @@ a {
     display: block;
     max-width: 65%;
     padding: 20px;
-    background-color: var(--turquesa);
+    background-color: var(--nosotros-formulario);
 }
 #nosotros-formulario legend {
-    color: var(--celeste);
+    color: var(--nosotros-formulario-legend);
 }
 #nosotros-formulario label {
     display: block;
-    color: var(--blanco);
+    color: var(--nosotros-formulario-label);
 }
 #nosotros-formulario input[type="text"],
 #nosotros-formulario input[type="email"],
@@ -505,13 +458,13 @@ a {
     color: var(--nosotros-formulario-input);
 }
 #nosotros-formulario input:focus {
-    outline: 3px solid var(--turquesa_oscuro);
+    outline: 3px solid var(--nosotros-formulario-input-focus);
 }
 #nosotros-formulario input[type="checkbox"] {
     width: 20px;
     height: 20px;
     border-radius: 30px;
-    accent-color: var(--celeste);
+    accent-color: var(--nosotros-formulario-checkbox);
 }
 #nosotros-formulario textarea {
     width: 100%;
@@ -519,21 +472,21 @@ a {
     color: var(--nosotros-formulario-input);
 }
 #nosotros-formulario textarea:focus {
-    border: 3px solid var(--turquesa_oscuro);
+    border: 3px solid var(--nosotros-formulario-input-focus);
 }
 #nosotros-formulario-boton {
     width: auto;
     margin-top: 0.5rem;
-    background-color: var(--dorado);
-    color: var(--negro);
+    background-color: var(--nosotros-formulario-boton-fondo);
+    color: var(--nosotros-formulario-boton-texto);
 }
 #nosotros-formulario-boton:hover {
-    background-color: var(--celeste);
-    color: var(--blanco);
+    background-color: var(--nosotros-formulario-boton-fondo-hover);
+    color: var(--nosotros-formulario-boton-texto-hover);
 }
 #nosotros-formulario p {
     display: block;
-    color: var(--blanco);
+    color: var(--nosotros-formulario-texto);
 }
 
 /* Clientes */
@@ -547,13 +500,13 @@ a {
     grid-column: 2/13;
     padding: 2rem;
     border-radius: 1.5rem;
-    background-color: var(--blanco);
+    background-color: var(--fondo1);
 }
 .formulario-contenedor2 {
     grid-column: 14/26;
     padding: 2rem;
     border-radius: 1.5rem;
-    background-color: var(--blanco);
+    background-color: var(--fondo1);
 }
 
 /* Formulario de inicio de sesión (login) */
@@ -561,14 +514,14 @@ a {
     display: block;
     max-width: 90%;
     padding: 20px;
-    background-color: var(--celeste);
+    background-color: var(--clientes-formulario-login);
 }
 #clientes-formulario-login legend {
-    color: var(--dorado);
+    color: var(--clientes-formulario-login-legend);
 }
 #clientes-formulario-login label {
     display: block;
-    color: var(--blanco);
+    color: var(--clientes-formulario-login-label);
 }
 #clientes-formulario-login input[type="text"],
 #clientes-formulario-login input[type="email"],
@@ -576,38 +529,38 @@ a {
 #clientes-formulario-login input[type="password"] {
     display: block;
     width: 100%;
-    color: var(--negro);
+    color: var(--clientes-formulario-login-input);
 }
 #clientes-formulario-login input:focus {
-    outline: 3px solid var(--celeste_oscurito2);
+    outline: 3px solid var(--clientes-formulario-login-input-focus);
 }
 #clientes-formulario-login input[type="checkbox"] {
     width: 20px;
     height: 20px;
     border-radius: 30px;
-    accent-color: var(--celeste);
+    accent-color: var(--clientes-formulario-login-checkbox);
 }
 #clientes-formulario-login textarea {
     width: 100%;
     height: 200px;
-    color: var(--negro);
+    color: var(--clientes-formulario-login-input);
 }
 #clientes-formulario-login textarea:focus {
-    border: 3px solid var(--celeste_oscurito2);
+    border: 3px solid var(--clientes-formulario-login-input-focus);
 }
 #clientes-formulario-login-boton {
     width: auto;
     margin-top: 0.5rem;
-    background-color: var(--dorado);
-    color: var(--blanco);
+    background-color: var(--clientes-formulario-login-boton-fondo);
+    color: var(--clientes-formulario-login-boton-texto);
 }
 #clientes-formulario-login-boton:hover {
-    background-color: var(--turquesa);
-    color: var(--blanco);
+    background-color: var(--clientes-formulario-login-boton-fondo-hover);
+    color: var(--clientes-formulario-login-boton-texto-hover);
 }
 #clientes-formulario-login p {
     display: block;
-    color: var(--blanco);
+    color: var(--clientes-formulario-login-texto);
 }
 
 /* Formulario de registro (signup) */
@@ -615,14 +568,14 @@ a {
     display: block;
     max-width: 90%;
     padding: 20px;
-    background-color: var(--dorado);
+    background-color: var(--clientes-formulario-signup);
 }
 #clientes-formulario-signup legend {
-    color: var(--celeste);
+    color: var(--clientes-formulario-signup-legend);
 }
 #clientes-formulario-signup label {
     display: block;
-    color: var(--blanco);
+    color: var(--clientes-formulario-signup-label);
 }
 #clientes-formulario-signup input[type="text"],
 #clientes-formulario-signup input[type="email"],
@@ -630,38 +583,38 @@ a {
 #clientes-formulario-signup input[type="password"] {
     display: block;
     width: 100%;
-    color: var(--negro);
+    color: var(--clientes-formulario-signup-input);
 }
 #clientes-formulario-signup input:focus {
-    outline: 3px solid var(--dorado_oscurito);
+    outline: 3px solid var(--clientes-formulario-signup-input-focus);
 }
 #clientes-formulario-signup input[type="checkbox"] {
     width: 20px;
     height: 20px;
     border-radius: 30px;
-    accent-color: var(--celeste);
+    accent-color: var(--clientes-formulario-signup-checkbox);
 }
 #clientes-formulario-signup textarea {
     width: 100%;
     height: 200px;
-    color: var(--negro);
+    color: var(--clientes-formulario-signup-input);
 }
 #clientes-formulario-signup textarea:focus {
-    border: 3px solid var(--dorado_oscurito);
+    border: 3px solid var(--clientes-formulario-signup-input-focus);
 }
 #clientes-formulario-signup-boton {
     width: auto;
     margin-top: 0.5rem;
-    background-color: var(--celeste);
-    color: var(--blanco);
+    background-color: var(--clientes-formulario-signup-boton-fondo);
+    color: var(--clientes-formulario-signup-boton-texto);
 }
 #clientes-formulario-signup-boton:hover {
-    background-color: var(--dorado_oscuro);
-    color: var(--blanco);
+    background-color: var(--clientes-formulario-signup-boton-fondo-hover);
+    color: var(--clientes-formulario-signup-boton-texto-hover);
 }
 #clientes-formulario-signup p {
     display: block;
-    color: var(--blanco);
+    color: var(--clientes-formulario-signup-texto);
 }
 
 /* Contactos */
@@ -670,14 +623,14 @@ a {
     display: block;
     max-width: 90%;
     padding: 20px;
-    background-color: var(--turquesa);
+    background-color: var(--contactos-formulario-contratar);
 }
 #contactos-formulario-contratar legend {
-    color: var(--dorado);
+    color: var(--contactos-formulario-contratar-legend);
 }
 #contactos-formulario-contratar label {
     display: block;
-    color: var(--blanco);
+    color: var(--contactos-formulario-contratar-label);
 }
 #contactos-formulario-contratar input[type="text"],
 #contactos-formulario-contratar input[type="email"],
@@ -685,38 +638,38 @@ a {
 #contactos-formulario-contratar input[type="password"] {
     display: block;
     width: 100%;
-    color: var(--negro);
+    color: var(--contactos-formulario-contratar-input);
 }
 #contactos-formulario-contratar input:focus {
-    outline: 3px solid var(--turquesa_oscuro);
+    outline: 3px solid var(--contactos-formulario-contratar-input-focus);
 }
 #contactos-formulario-contratar input[type="checkbox"] {
     width: 20px;
     height: 20px;
     border-radius: 30px;
-    accent-color: var(--celeste);
+    accent-color: var(--contactos-formulario-contratar-checkbox);
 }
 #contactos-formulario-contratar textarea {
     width: 100%;
     height: 200px;
-    color: var(--negro);
+    color: var(--contactos-formulario-contratar-input);
 }
 #contactos-formulario-contratar textarea:focus {
-    border: 3px solid var(--turquesa_oscuro);
+    border: 3px solid var(--contactos-formulario-contratar-input-focus);
 }
 #contactos-formulario-contratar-boton {
     width: auto;
     margin-top: 0.5rem;
-    background-color: var(--dorado);
-    color: var(--negro);
+    background-color: var(--contactos-formulario-contratar-boton-fondo);
+    color: var(--contactos-formulario-contratar-boton-texto);
 }
 #contactos-formulario-contratar-boton:hover {
-    background-color: var(--celeste);
-    color: var(--blanco);
+    background-color: var(--contactos-formulario-contratar-boton-fondo-hover);
+    color: var(--contactos-formulario-contratar-boton-texto-hover);
 }
 #contactos-formulario-contratar p {
     display: block;
-    color: var(--blanco);
+    color: var(--contactos-formulario-contratar-texto);
 }
 
 /* Formulario para unirse al equipo */
@@ -724,14 +677,14 @@ a {
     display: block;
     max-width: 90%;
     padding: 20px;
-    background-color: var(--dorado_oscuro);
+    background-color: var(--contactos-formulario-unirse);
 }
 #contactos-formulario-unirse legend {
-    color: var(--dorado);
+    color: var(--contactos-formulario-unirse-legend);
 }
 #contactos-formulario-unirse label {
     display: block;
-    color: var(--blanco);
+    color: var(--contactos-formulario-unirse-label);
 }
 #contactos-formulario-unirse input[type="text"],
 #contactos-formulario-unirse input[type="email"],
@@ -739,36 +692,36 @@ a {
 #contactos-formulario-unirse input[type="password"] {
     display: block;
     width: 100%;
-    color: var(--negro);
+    color: var(--contactos-formulario-unirse-input);
 }
 #contactos-formulario-unirse input:focus {
-    outline: 3px solid var(--dorado_oscurazo);
+    outline: 3px solid var(--contactos-formulario-unirse-input-focus);
 }
 #contactos-formulario-unirse input[type="checkbox"] {
     width: 20px;
     height: 20px;
     border-radius: 30px;
-    accent-color: var(--celeste);
+    accent-color: var(--contactos-formulario-unirse-checkbox);
 }
 #contactos-formulario-unirse textarea {
     width: 100%;
     height: 200px;
-    color: var(--negro);
+    color: var(--contactos-formulario-unirse-input);
 }
 #contactos-formulario-unirse textarea:focus {
-    border: 3px solid var(--dorado_oscurazo);
+    border: 3px solid var(--contactos-formulario-unirse-input-focus);
 }
 #contactos-formulario-unirse-boton {
     width: auto;
     margin-top: 0.5rem;
-    background-color: var(--celeste);
-    color: var(--blanco);
+    background-color: var(--contactos-formulario-unirse-boton-fondo);
+    color: var(--contactos-formulario-unirse-boton-texto);
 }
 #contactos-formulario-unirse-boton:hover {
-    background-color: var(--dorado);
-    color: var(--negro);
+    background-color: var(--contactos-formulario-unirse-boton-fondo-hover);
+    color: var(--contactos-formulario-unirse-boton-texto-hover);
 }
 #contactos-formulario-unirse p {
     display: block;
-    color: var(--blanco);
+    color: var(--contactos-formulario-unirse-texto);
 }

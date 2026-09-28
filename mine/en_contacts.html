@@ -1,51 +1,54 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="" />
         <meta
             name="keywords"
-            content="IPEXa,software,programacion,desarrollo,tecnologia,diseño,web,e-commerce,apps,aplicaciones"
+            content="IPEXa,software,programming,development,technology,design,web,e-commerce,apps,applications"
         />
         <meta name="author" content="Juan Martín Rodríguez" />
         <meta name="title" content="IPEXA Software" />
-        <title>Contactos - IPEXA Software</title>
+        <title>Contacts - IPEXA Software</title>
 
         <link rel="preload" href="CSS/normalize.css" as="style" />
         <link rel="preload" href="CSS/fonts.css" as="style" />
+        <link rel="preload" href="CSS/colors.css" as="style" />
         <link rel="preload" href="CSS/styles.css" as="style" />
-        <link rel="preload" href="CSS/responsive.css" as="style" />
 
         <link rel="stylesheet" href="CSS/normalize.css" />
         <link rel="stylesheet" href="CSS/fonts.css" />
+        <link rel="stylesheet" href="CSS/colors.css" />
         <link rel="stylesheet" href="CSS/styles.css" />
-        <link rel="stylesheet" href="CSS/responsive.css" />
 
         <link rel="icon" type="image/svg+xml" href="images/favicon.svg" sizes="any" />
     </head>
 
     <body>
-        <a href="en_contacts.html" id="english">Idioma: inglés</a>
+        <input type="checkbox" id="dark-mode" style="display: none" />
+        <label id="modo-oscuro" for="dark-mode">Dark mode</label>
+
+        <a href="contacts.html" id="spanish">Language: spansih</a>
 
         <div class="contenido">
             <header>
-                <h1 class="titulo">Contactos</h1>
+                <h1 class="titulo">Contacts</h1>
                 <h2 class="subtitulo">IPEXA Software</h2>
 
                 <div class="menu-fondo">
                     <nav class="menu contenedor">
-                        <a href="index.html">Inicio</a>
-                        <a href="about_us.html">Nosotros</a>
-                        <a href="clients.html">Clientes</a>
-                        <a href="#" class="activo">Contactos</a>
+                        <a href="en_index.html">Home</a>
+                        <a href="en_about_us.html">About us</a>
+                        <a href="en_clients.html">Clients</a>
+                        <a href="#" class="activo">Contacts</a>
                     </nav>
                 </div>
             </header>
 
             <section class="hero">
                 <div class="hero-contenido">
-                    <h2>Soporte 24/7</h2>
+                    <h2>24/7 support</h2>
 
                     <div class="hero-elementos">
                         <svg
@@ -64,20 +67,20 @@
                             />
                         </svg>
 
-                        <p>¡A tu disposición siempre!</p>
+                        <p>Always at your service!</p>
                     </div>
 
-                    <a class="hero-boton" href="#formulario-contratar">Contratar servicios</a>
+                    <a class="hero-boton" href="#">Hire services</a>
                 </div>
             </section>
 
             <main>
                 <div class="contenido-central">
-                    <h2 class="subtitulo">Nuestros Servicios</h2>
+                    <h2 class="subtitulo">Our Services</h2>
 
                     <section class="servicios">
                         <div class="servicio">
-                            <h3>Diseño Web</h3>
+                            <h3>Web Design</h3>
                             <div class="servicio-circulo">
                                 <svg
                                     class="servicio-icono"
@@ -123,7 +126,7 @@
                         </div>
 
                         <div class="servicio">
-                            <h3>Aplicaciones Web</h3>
+                            <h3>Web Apps</h3>
                             <div class="servicio-circulo">
                                 <svg
                                     class="servicio-icono"
@@ -219,15 +222,14 @@
 
                 <div class="formularios">
                     <section class="formulario-contenedor1">
-                        <h2 class="subtitulo" id="formulario-contratar">Contratar un servicio</h2>
-                        <h3 class="subsubtitulo">Completo y personalizado</h3>
+                        <h2 class="subtitulo">Hire a service</h2>
+                        <h3 class="subsubtitulo">Complete and personalized</h3>
 
                         <form class="formulario" id="contactos-formulario-contratar">
                             <fieldset>
-                                <div class="campo">
-                                    <label>Nombre<br /></label>
+                                <div>
+                                    <label>Full name<br /></label>
                                     <input
-                                        class="input-texto"
                                         type="text"
                                         placeholder="John Doe"
                                         title="Completa este campo con tu nombre completo"
@@ -238,15 +240,15 @@
                                     />
                                 </div>
 
-                                <div class="campo">
-                                    <label>¿Qué servicio quieres contratar?<br /></label>
+                                <div>
+                                    <label>Which service do you want to hire?<br /></label>
                                     <div class="formulario-opcion">
                                         <input type="checkbox" id="diseño_web" name="diseño_web" />
-                                        <label for="diseño_web">Diseño web</label>
+                                        <label for="diseño_web">Web design</label>
                                     </div>
                                     <div class="formulario-opcion">
                                         <input type="checkbox" id="apps_web" name="apps_web" />
-                                        <label for="apps_web">Aplicaciones web</label>
+                                        <label for="apps_web">Web apps</label>
                                     </div>
                                     <div class="formulario-opcion">
                                         <input type="checkbox" id="e_commerce" name="e_commerce" />
@@ -254,14 +256,9 @@
                                     </div>
                                 </div>
 
-                                <div class="campo">
-                                    <label>Déjanos una breve descripción de tu necesidad<br /></label>
-                                    <textarea
-                                        class="input-texto"
-                                        title="Cuéntanos qué es lo que necesitas"
-                                        name="message"
-                                        maxlength="500"
-                                    >
+                                <div>
+                                    <label>Please give us a brief description of your need<br /></label>
+                                    <textarea title="Cuéntanos qué es lo que necesitas" name="message" maxlength="500">
                                     </textarea>
                                 </div>
 
@@ -270,27 +267,26 @@
                                         class="formulario-boton"
                                         id="contactos-formulario-contratar-boton"
                                         type="submit"
-                                        value="Enviar"
+                                        value="Send"
                                     />
                                 </div>
 
                                 <div>
-                                    <p>Recibirás una respuesta en breve!</p>
+                                    <p>You will recieve a response shortly!</p>
                                 </div>
                             </fieldset>
                         </form>
                     </section>
 
                     <section class="formulario-contenedor2">
-                        <h2 class="subtitulo">Convertirme en miembro del equipo</h2>
-                        <h3 class="subsubtitulo">Colaboración, disposición y profesionalismo</h3>
+                        <h2 class="subtitulo">Become a team member</h2>
+                        <h3 class="subsubtitulo">Collaboration, willingness and professionalism</h3>
 
                         <form class="formulario" id="contactos-formulario-unirse">
                             <fieldset>
-                                <div class="campo">
-                                    <label>Nombre completo<br /></label>
+                                <div>
+                                    <label>Full name<br /></label>
                                     <input
-                                        class="input-texto"
                                         type="text"
                                         placeholder="John Doe"
                                         title="Completa este campo con tu nombre completo"
@@ -301,10 +297,9 @@
                                     />
                                 </div>
 
-                                <div class="campo">
-                                    <label>Nacionalidad<br /></label>
+                                <div>
+                                    <label>Nationality<br /></label>
                                     <input
-                                        class="input-texto"
                                         type="text"
                                         placeholder="Argentinian"
                                         title="Completa este campo con tu nacionalidad"
@@ -315,15 +310,15 @@
                                     />
                                 </div>
 
-                                <div class="campo">
-                                    <label>¿De qué área quieres formar parte?<br /></label>
+                                <div>
+                                    <label>Which area would you like to be a part of?<br /></label>
                                     <div class="formulario-opcion">
                                         <input type="checkbox" id="diseño_web" name="diseño_web" />
-                                        <label for="diseño_web">Diseño web</label>
+                                        <label for="diseño_web">Web design</label>
                                     </div>
                                     <div class="formulario-opcion">
                                         <input type="checkbox" id="apps_web" name="apps_web" />
-                                        <label for="apps_web">Aplicaciones web</label>
+                                        <label for="apps_web">Web apps</label>
                                     </div>
                                     <div class="formulario-opcion">
                                         <input type="checkbox" id="e_commerce" name="e_commerce" />
@@ -331,10 +326,9 @@
                                     </div>
                                 </div>
 
-                                <div class="campo">
-                                    <label>Cuéntanos un poco sobre ti<br /></label>
+                                <div>
+                                    <label>Tell us about yourself<br /></label>
                                     <textarea
-                                        class="input-texto"
                                         title="Escribe sobre tus experiencias, pasatiempos..."
                                         name="message"
                                         maxlength="500"
@@ -347,12 +341,12 @@
                                         class="formulario-boton"
                                         id="contactos-formulario-unirse-boton"
                                         type="submit"
-                                        value="Enviar"
+                                        value="Send"
                                     />
                                 </div>
 
                                 <div>
-                                    <p>Recibirás una respuesta en breve!</p>
+                                    <p>You will recieve a response shortly!</p>
                                 </div>
                             </fieldset>
                         </form>
@@ -361,7 +355,7 @@
             </main>
 
             <footer class="pie">
-                <p>© 2026 IPEXA Software. Todos los derechos reservados.</p>
+                <p>© 2026 IPEXA Software. All rights reserved.</p>
             </footer>
         </div>
     </body>
